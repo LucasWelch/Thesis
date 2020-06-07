@@ -63,7 +63,7 @@ for interation in range(0,5):
             for index in range(0,final_index):
                 bucket_X_train.extend(X_buckets[index])
                 bucket_y_train.extend(y_buckets[index])
-            test_index = x + 1
+            test_index = final_index + 1
         while test_index < 100:
             bucket_X_test.extend(X_buckets[test_index])
             bucket_y_test.extend(y_buckets[test_index])
